@@ -22,18 +22,41 @@
 .quick-menu .quick{background: #e47105; color: #fff; font-size: 20px; padding-top: 5px;}
 .quick-menu .quick span{font-weight: 600;}
 
-#visual{width: 100%; background: green;}
-#visual .inner{background: lightgreen; height: 585px;}
-#visual .txtbox{position: absolute; left: 0; top: 60px; height: 440px; background: #dcdcdc; position: relative;}
-#visual .txtbox h2{}
-#visual .txtbox h2 span{}
-#visual .txtbox p{}
-#visual ul{position: absolute; right: -200px; top: 60px;display: flex;}
-#visual ul li{background: grey; width: 200px;height: 480px;}
+#visual{width: 100%; }
+#visual .inner{ height: 585px;}
+#visual .txt{position: absolute; left: 0; top: 60px; height: 440px; background: #fff; position: relative;}
+#visual .txt li{width: 100%; height: 100%; background: #fff;}
+#visual .txt li .txtbox{width: 100%;}
+#visual .txt li .txtbox h2{font-weight: 500; font-size: 46px;margin-top: 0; color: #000;}
+#visual .txt li .txtbox h2 span{color: #ccab25;}
+#visual .txt li .txtbox p{display: block; width: 300px; margin-top: 35px; line-height: 38px; font-weight: 500; word-break: keep-all;font-size: 18px;}
+#visual .buttonbox{position: absolute; bottom: 0; z-index: 1; display: flex;}
+#visual .buttonbox .button{margin-right: 60px;}
+#visual .buttonbox .current{width: 80px;height: 60px; background: #f3f1ee;text-align: center; line-height: 60px;font-size: 14px;font-weight: 500;}
+#visual .buttonbox .arrowbox{width: 50px;height: 60px; font-size: 30px; text-align: center;border: 1px solid #000; line-height: 60px; margin-left: 10px;}
+
+#visual ul{position: absolute; right: -200px; top: 60px;display: flex; }
+#visual ul li{width: 200px;height: 480px; background-image: url(../images/visual01.jpg);background-repeat: no-repeat;}
+#visual ul li:nth-child(1){background-position: 0px -20px;}
+#visual ul li:nth-child(2){background-position: -200px 0px;}
+#visual ul li:nth-child(3){background-position: -400px -20px;}
+#visual ul li:nth-child(4){background-position: -600px 0px;}
 #visual ul li:nth-of-type(even){margin-top: -20px;}
 
 
 .news{width: 100%; background: bisque;}
+.news ul{display: flex;margin-top: 20px;}
+.news ul li{}
+.news ul li .box{width: 400px;height: 260px; overflow: hidden; position: relative; }
+.news ul li .box em{padding-left: 30px;padding-top: 15px;font-size: 10px;}
+.news ul li .box h3{font-size: 24px;font-weight: 600; padding-left: 30px;padding-top: 30px; word-break: keep-all;}
+.news ul li .box p{padding-left: 30px;}
+.news ul li .imgbox{}
+.news ul li .imgbox img{}
+.news ul li .whitebox{}
+.news ul li .red{color: #fff; background: #a40e17;}
+.news ul li .red .button_min{border: 1px solid #fff;}
+.news ul li .blue{}
 .news .inner{height: 1000px;background: beige;}
 
 .notice{width: 100%; background: royalblue;}
